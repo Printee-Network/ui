@@ -1,0 +1,45 @@
+/*
+ * I toni di stato (in ritardo, attenzione, a posto, informazione, neutro): le pillole e gli avvisi li usano
+ * al posto dei colori Tailwind cablati. Il resto della palette resta di ogni app.
+ * Nel globals.css dell'app, dopo `@import "tailwindcss";`:
+ *   @import "@printee-network/ui/theme.css";
+ *   @source "../node_modules/@printee-network/ui/build";
+ */
+:root {
+  --tone-late: #f5e3de;
+  --tone-late-foreground: #8e3a28;
+  --tone-warn: #f0e9dc;
+  --tone-warn-foreground: #7a5a1f;
+  --tone-ok: #e6ede6;
+  --tone-ok-foreground: #3b573f;
+  --tone-info: #e9eff5;
+  --tone-info-foreground: #2f4d6b;
+  --tone-neutral: #f1efeb;
+  --tone-neutral-foreground: #55504a;
+}
+
+.dark {
+  --tone-late: #3a231d;
+  --tone-late-foreground: #e2a394;
+  --tone-warn: #33291a;
+  --tone-warn-foreground: #d8b874;
+  --tone-ok: #1f2b21;
+  --tone-ok-foreground: #9dc0a3;
+  --tone-info: #1e2a35;
+  --tone-info-foreground: #9dbcd8;
+  --tone-neutral: #26241f;
+  --tone-neutral-foreground: #b3ada2;
+}
+
+@theme inline {
+  --color-tone-late: var(--tone-late);
+  --color-tone-late-foreground: var(--tone-late-foreground);
+  --color-tone-warn: var(--tone-warn);
+  --color-tone-warn-foreground: var(--tone-warn-foreground);
+  --color-tone-ok: var(--tone-ok);
+  --color-tone-ok-foreground: var(--tone-ok-foreground);
+  --color-tone-info: var(--tone-info);
+  --color-tone-info-foreground: var(--tone-info-foreground);
+  --color-tone-neutral: var(--tone-neutral);
+  --color-tone-neutral-foreground: var(--tone-neutral-foreground);
+}
